@@ -1,0 +1,317 @@
+<!doctype html>
+<html lang="en" prefix="og: http://ogp.me/ns#">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- SEO -->
+  <title>SF210 - Midterm Recap</title>
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,700,700i%7CMaitree:200,300,400,600,700&amp;subset=latin-ext"
+    rel="stylesheet">
+
+  <!-- CSS WebSlides -->
+  <link rel="stylesheet" type='text/css' media='all' href="../static/css/webslides.css">
+
+  <!-- Optional - CSS SVG Icons (Font Awesome) -->
+  <link rel="stylesheet" type='text/css' media='all' href="../static/css/svg-icons.css">
+  <link rel="stylesheet" type='text/css' media='all' href="../static/css/prism.css">
+
+</head>
+
+<body>
+
+  <main role="main">
+    <article id="webslides" class="vertical">
+      <!-- Quick Guide
+          - Each parent <section> in the <article id="webslides"> element is an individual slide.
+          - Vertical sliding = <article id="webslides" class="vertical">
+          - <div class="wrap"> = container 90% / <div class="wrap size-50"> = 45%;
+        -->
+
+      <section class="slide-top">
+        <!--.wrap = container (width: 90%) -->
+        <div class="wrap alignleft">
+          <h1><strong>Problem 1</strong></h1>
+          <p class="text-intro">
+            เขียนโปรแกรมเพื่ออ่านจำนวนจริงมาสามจำนวนและแสดงค่าที่น้อยที่สุด ดังตัวอย่างการรันโปรแกรมต่อไปนี้
+            (ขีดเส้นใต้หมายถึงข้อมูลที่ป้อนโดยผู้ใช้)
+          </p>
+          <p>
+            <pre><code>Enter 3 numbers: <u>3.2 4.1 -5</u>
+Min = -5.0</code></pre>
+          </p>
+        </div>
+        <!-- .end .wrap -->
+      </section>
+
+      <section class="slide-top">
+        <!--.wrap = container (width: 90%) -->
+        <div class="wrap alignleft">
+          <h1><strong>Problem 2</strong></h1>
+          <p class="text-intro">
+            เขียนฟังก์ชันชื่อว่า <code>undouble</code> ซึ่งรับพารามิเตอร์เป็นสตริงและส่งคืน (return) สตริง
+            โดยแทนตัวอักษรเดียวกันที่เขียนติดกันด้วยอักษรนั้นเพียงตัวเดียว เช่น สตริง <code>bookkeeper</code>
+            จะถูกเปลี่ยนเป็น <code>bokeper</code> โดย <code>oo</code> จะถูกเปลี่ยนเป็น <code>o</code>,
+            <code>kk</code> จะถูกเปลี่ยนเป็น <code>k</code> และ <code>ee</code> จะถูกเปลี่ยนเป็น <code>e</code>
+            และมีตัวอย่างอื่น ๆ ดังนี้
+          </p>
+          <p>
+            <table>
+              <tr>
+                <th>Function Call</th>
+                <th>Value Returned</th>
+              </tr>
+              <tr>
+                <td><code>undouble("odegaard")</code></td>
+                <td><code>"odegard"</code></td>
+              </tr>
+              <tr>
+                <td><code>undouble("theses")</code></td>
+                <td><code>"theses"</code></td>
+              </tr>
+              <tr>
+                <td><code>undouble("")</code></td>
+                <td><code>""</code></td>
+              </tr>
+            </table>
+          </p>
+        </div>
+        <!-- .end .wrap -->
+      </section>
+
+      <section class="slide-top">
+        <!--.wrap = container (width: 90%) -->
+        <div class="wrap alignleft">
+          <h1><strong>Problem 3</strong></h1>
+          <p class="text-intro">
+            เขียนฟังก์ชันชื่อว่า <code>swapWords</code> ซึ่งรับพารามิเตอร์เป็นสตริง 3 ค่า ได้แก่
+            <code>s</code>, <code>a</code>, และ <code>b</code> โดยคำในสตริง <code>s</code>
+            จะคั่นด้วยช่องว่างหนึ่งช่อง และสตริง <code>a</code> และสตริง <code>b</code> เป็นคำ ให้ส่งคืน (return)
+            ค่าเป็นสตริง โดยสลับคำ <code>a</code> และ <code>b</code> ทุกที่ในสตริง <code>s</code> ดังตัวอย่างต่อไปนี้
+          </p>
+          <p>
+            <table>
+              <tr>
+                <th>Function Call</th>
+                <th>Value Returned</th>
+              </tr>
+              <tr>
+                <td><code>swapWords("one + two = three","one","two")</code></td>
+                <td><code>"two + one = three"</code></td>
+              </tr>
+              <tr>
+                <td><code>swapWords("fox & cat are cat & fox","fox","cat")</code></td>
+                <td><code>"cat & fox are fox & cat"</code></td>
+              </tr>
+              <tr>
+                <td><code>swapWords("I like dogs","dogs","cats")</code></td>
+                <td><code>"I like cats"</code></td>
+              </tr>
+              <tr>
+                <td><code>swapWords("I like dogs","cats","dogs")</code></td>
+                <td><code>"I like cats"</code></td>
+              </tr>
+            </table>
+          </p>
+        </div>
+        <!-- .end .wrap -->
+      </section>
+
+      <section class="slide-top">
+        <!--.wrap = container (width: 90%) -->
+        <div class="wrap alignleft">
+          <h1><strong>Problem 4</strong></h1>
+          <p class="text-intro">
+            เขียนฟังก์ชันชื่อว่า <code>averageFirstLastMiddle</code> ซึ่งรับ <code>list</code>
+            ของจำนวนจริง และส่งคืน (return) ค่าเฉลี่ยของจำนวนแรก จำนวนสุดท้าย และจำนวนตรงกลาง
+            (หรือสองจำนวนตรงกลางถ้าขนาดของ <code>list</code> เป็นเลขคู่) ดังตัวอย่างต่อไปนี้
+          </p>
+          <p>
+            <table>
+              <tr>
+                <th>Function Call</th>
+                <th>Value Returned</th>
+                <th>คำนวณจาก</th>
+              </tr>
+              <tr>
+                <td><code>averageFirstLastMiddle([0, 1, 2, 3])</code></td>
+                <td><code>1.5</code></td>
+                <td>$(0+1+2+3)/4$</td>
+              </tr>
+              <tr>
+                <td><code>averageFirstLastMiddle([0, 1, 2, 3, 4, 5])</code></td>
+                <td><code>2.5</code></td>
+                <td>$(0+2+3+5)/4$</td>
+              </tr>
+              <tr>
+                <td><code>averageFirstLastMiddle([0, 0, 0, 0, 0, 0])</code></td>
+                <td><code>0.0</code></td>
+                <td>$(0+0+0+0)/4$</td>
+              </tr>
+              <tr>
+                <td><code>averageFirstLastMiddle([1, 1, 4, 1, 1])</code></td>
+                <td><code>2.0</code></td>
+                <td>$(1+4+1)/3$</td>
+              </tr>
+            </table>
+          </p>
+        </div>
+        <!-- .end .wrap -->
+      </section>
+
+      <section class="slide-top">
+        <!--.wrap = container (width: 90%) -->
+        <div class="wrap alignleft">
+          <h1><strong>Problem 5</strong></h1>
+          <p class="text-intro">
+            เขียนฟังก์ชันชื่อว่า <code>isGoodPassword</code> ซึ่งรับสตริง <code>password</code>
+            และส่งคืน (return) ค่า <code>True</code> ถ้า <code>password</code> เป็นรหัสผ่านที่ดี
+            และส่งคืน (return) ค่า <code>False</code> ถ้า <code>password</code> เป็นรหัสผ่านที่ไม่ดีพอ
+            โดยรหัสผ่านที่ดีต้องประกอบด้วยอักษรอย่างน้อย 10 ตัว มีตัวเลข
+            อักษรภาษาอังกฤษตัวพิมพ์เล็ก และอักษรภาษาอังกฤษตัวพิมพ์ใหญ่ อย่างน้อยอย่างละ 1 ตัว ดังตัวอย่างต่อไปนี้
+
+          </p>
+          <p>
+            <table>
+              <tr>
+                <th>Function Call</th>
+                <th>Value Returned</th>
+                <th>เหตุผล</th>
+              </tr>
+              <tr>
+                <td><code>isGoodPassword('A1213pokl')</code></td>
+                <td><code>False</code></td>
+                <td>สั้นไป</td>
+              </tr>
+              <tr>
+                <td><code>isGoodPassword('bAse730onE')</code></td>
+                <td><code>True</code></td>
+                <td>ผ่าน</td>
+              </tr>
+              <tr>
+                <td><code>isGoodPassword('asasasasasasasaas')</code></td>
+                <td><code>False</code></td>
+                <td>ไม่มีตัวเลขและตัวพิมพ์ใหญ่</td>
+              </tr>
+              <tr>
+                <td><code>isGoodPassword('QWERTYqwerty')</code></td>
+                <td><code>False</code></td>
+                <td>ไม่มีตัวเลข</td>
+              </tr>
+              <tr>
+                <td><code>isGoodPassword('123456123456')</code></td>
+                <td><code>False</code></td>
+                <td>ไม่มีตัวพิมพ์เล็กและตัวพิมพ์ใหญ่</td>
+              </tr>
+              <tr>
+                <td><code>isGoodPassword('QwErTy911poqqqq')</code></td>
+                <td><code>True</code></td>
+                <td>ผ่าน</td>
+              </tr>
+            </table>
+        </div>
+        <!-- .end .wrap -->
+      </section>
+
+      <section class="slide-top">
+        <!--.wrap = container (width: 90%) -->
+        <div class="wrap alignleft">
+          <h1><strong>Problem 6</strong></h1>
+          <p class="text-intro">
+            เขียนฟังก์ชันแบบ recursive ชื่อว่า <code>sumAll</code> ซึ่งรับ <code>list</code>
+            โดยสมาชิกใน <code>list</code> อาจเป็นจำนวน, <code>list</code> หรือ <code>nested list</code>
+            (<code>list</code> ใน <code>list</code>) ก็ได้ และ ส่งคืน (return)
+            ค่าผลบวกของจำนวนทุกจำนวน ดังตัวอย่างต่อไปนี้
+          </p>
+          <p>
+            <table>
+              <tr>
+                <th>Function Call</th>
+                <th>Value Returned</th>
+              </tr>
+              <tr>
+                <td><code>sumAll([0, 1, 2, 3])</code></td>
+                <td><code>6</code></td>
+              </tr>
+              <tr>
+                <td><code>sumAll([0, 1, 2, [3, 4], 5])</code></td>
+                <td><code>15</code></td>
+              </tr>
+              <tr>
+                <td><code>sumAll([[[[[1, 1], 1], 1], 1], 1])</code></td>
+                <td><code>6</code></td>
+              </tr>
+              <tr>
+                <td><code>sumAll([[1, 1], [[4, 1], 1]])</code></td>
+                <td><code>8</code></td>
+              </tr>
+              <tr>
+                <td><code>sumAll([])</code></td>
+                <td><code>0</code></td>
+              </tr>
+            </table>
+          </p>
+        </div>
+        <!-- .end .wrap -->
+      </section>
+
+      <section class="slide-top">
+        <!--.wrap = container (width: 90%) -->
+        <div class="wrap alignleft">
+          <h1><strong>Problem 6</strong></h1>
+          <p class="text-intro">
+            เขียนฟังก์ชันแบบ recursive ชื่อว่า <code>sumAll</code> ซึ่งรับ <code>list</code>
+            โดยสมาชิกใน <code>list</code> อาจเป็นจำนวน, <code>list</code> หรือ <code>nested list</code>
+            (<code>list</code> ใน <code>list</code>) ก็ได้ และ ส่งคืน (return)
+            ค่าผลบวกของจำนวนทุกจำนวน
+          </p>
+          <p>
+            สามารถใช้สูตรต่อไปนี้ในการคำนวณได้
+            $$
+            \texttt{sumAll(l)} =
+            \begin{cases}
+            \texttt{0} & \text{if $\texttt{l}$ is empty list}\\
+            \texttt{sumAll(l[0])} + \texttt{sumAll(l[1:])} & \text{if $\texttt{l[0]}$ is a list}\\
+            \texttt{l[0]} + \texttt{sumAll(l[1:])} & \text{otherwise}
+            \end{cases}
+            $$
+          </p>
+        </div>
+        <!-- .end .wrap -->
+      </section>
+
+    </article>
+    <!-- end article -->
+  </main>
+  <!-- end main -->
+
+  <!-- A global footer
+
+     <footer role="contentinfo">
+      <div class="wrap">
+        <p>An <a href="https://github.com/webslides/webslides">open source solution</a>, by <a href="https://twitter.com/webslides">@webslides</a>.</p>
+      </div>
+    </footer>  -->
+
+  <!-- Required -->
+  <script src="../static/js/webslides.js"></script>
+  <script>
+    window.ws = new WebSlides();
+  </script>
+
+  <!-- OPTIONAL - svg-icons.js (fontastic.me - Font Awesome as svg icons) -->
+  <script defer src="../static/js/svg-icons.js"></script>
+  <script src="../static/js/prism.js"></script>
+  <script type="text/javascript" async
+    src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+  <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+    </script>
+
+</body>
+
+</html>
